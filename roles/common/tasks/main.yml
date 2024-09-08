@@ -1,0 +1,11 @@
+- name: Ensure vim is installed
+  apt:
+    name: vim
+    state: present
+  become: yes
+
+- name: Ensure zip is installed
+  apt:
+    name: zip
+    state: present
+  become: yes
