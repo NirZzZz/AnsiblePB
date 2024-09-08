@@ -1,0 +1,8 @@
+- name: Deploy "Hello World!" file to /tmp/test1
+  copy:
+    content: "Hello World!\n"
+    dest: /tmp/test1
+    owner: root
+    group: root
+    mode: '0644'
+  become: yes

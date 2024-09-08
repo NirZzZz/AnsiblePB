@@ -2,3 +2,9 @@
   become: yes
   roles:
     - common
+
+- hosts: all
+  become: yes
+  roles:
+    - deploy_file
+    - deploy_template
